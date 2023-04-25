@@ -29,7 +29,7 @@ def text_analyzer(text):
 		
 	print("The text contains" + str(len(text)) + "character(s):")
 	print("- " + str(upper) + " upper letter(s)")
-	print("- " + str(lower ) + " lower letter(s)")
+	print("- " + str(lower) + " lower letter(s)")
 	print("- " + str(punc) + " punctuation mark(s)")
 	print("- " + str(spaces) + " space(s)")
 
