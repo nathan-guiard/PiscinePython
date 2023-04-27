@@ -1,6 +1,6 @@
 import time
 
-braille = [u"\u258E", u"\u258C", u"\u258A", u"\u2588"]
+braille = [u"\u258F", u"\u258E", u"\u258D", u"\u258C", u"\u258B", u"\u258A", u"\u2589", u"\u2588"]
 
 def ft_progress(listy):
 	current = 0
@@ -11,15 +11,15 @@ def ft_progress(listy):
 
 	for x in listy:
 		time_passed = int(time.time() - base_time)
-		percent = current * 100 // size
-		block_number = (percent // 4)
+		percent = current * 200 // size
+		block_number = (percent // 8)
 		print("\033[1F\033[2K", end='')
 		print("\x1b[32;44m", end='')
 		print('█' * block_number, end='')
-		print(braille[percent % 4], end='')
+		print(braille[percent % 8], end='')
 		print(' ' * (24 - block_number), end='')
 		print("\033[0m", end='')
-		print(percent, " ", end='')
+		print(int(percent / 2), " ", end='')
 		print("time:%3d seconds" % time_passed, end='')
 		print()
 		current += 1
