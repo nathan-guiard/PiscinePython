@@ -32,6 +32,6 @@ if two == 0:
 	print("Could not devide by 0")
 	print("Could not do a modulo by 0")
 else:
-	print("Quiotien:\t%d" % (one / two))
+	print("Quotien:\t%d" % (one / two))
 	print("Remainder:\t%d" % (one % two))
 
